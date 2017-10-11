@@ -1,0 +1,9 @@
+2017-9-13 10:58:14
+问题：HTML 文件上传显示没有上传文件，最后找到原因
+原因：input 没有 name 属性造成的……。
+解决：input 添加name
+2017-10-11 19:40:38
+问题：window.open 在ajax 中返回null，无法打开新页面
+原因：浏览器认为 ajax不是人操作window.open 函数，不安全，所以拦截了
+解决：1. 在ajax前面 open,在ajax里write
+      2. 修改ajax 同步参数为同步（而非默认的异步），在ajax里open,write
