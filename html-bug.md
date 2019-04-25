@@ -21,3 +21,7 @@
       // 获取当前iframe src
       window.parent.document.getElementById(window.name).src;
       ```
+5. 2019-04-25 10:38:36
+      问题：弹出框中图片上传不能点击，
+      原因：图片上传初始化时，对应的 div 是 display:none; 所以是没有宽高的，所以不能被点击。
+      解决：在弹出框弹出后再进行上传初始化。
